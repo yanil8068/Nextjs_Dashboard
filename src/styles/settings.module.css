@@ -1,0 +1,67 @@
+/* styles/settings.module.css */
+
+.settingsContainer {
+  padding: 20px;
+  border: 2px solid black;
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  background-color: #dfd3c3;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.settingsTitle {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.settingsLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.settingsCheckbox {
+  width: 20px;
+  height: 20px;
+}
+
+.settingsButton {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0070f3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.settingsButton:hover {
+  background-color: #005bb5;
+}
+
+@media (max-width: 600px) {
+  .settingsContainer {
+    padding: 15px;
+  }
+
+  .settingsTitle {
+    font-size: 1.5rem;
+  }
+
+  .settingsLabel {
+    font-size: 0.9rem;
+  }
+
+  .settingsButton {
+    font-size: 0.9rem;
+  }
+}

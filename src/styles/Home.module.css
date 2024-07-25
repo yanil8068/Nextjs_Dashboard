@@ -1,0 +1,21 @@
+/* styles/Home.module.css */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 2rem;
+  background-color: #f3feb8;
+}
+.main {
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #dfd3c3;
+}
+.linkstyle {
+  font-size: larger;
+  font-weight: 800;
+}
