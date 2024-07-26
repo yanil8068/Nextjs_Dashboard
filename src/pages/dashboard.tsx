@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from "react";
-import Chart from "@/components/Chart";
-import DataTable from "@/components/DataTable";
-import Statistics from "@/components/Statistics";
+import dynamic from "next/dynamic";
 import styles from "@/styles/dashboard.module.css";
 import Link from "next/link";
+
+// Dynamically import components
+const Chart = dynamic(() => import("@/components/Chart"), { ssr: false });
+const DataTable = dynamic(() => import("@/components/DataTable"), {
+  ssr: false,
+});
+const Statistics = dynamic(() => import("@/components/Statistics"), {
+  ssr: false,
+});
 
 const Dashboard: React.FC = () => {
   const [showName, setShowName] = useState<boolean>(true);
